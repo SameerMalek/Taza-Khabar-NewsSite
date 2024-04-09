@@ -68,7 +68,7 @@ export default class News extends Component {
   render() {
     return (
       <div className="container my-3">
-        <h1 className="text-center" style={{textTransform:'capitalize'}}>Taza-Khabar: Top Headlines on <text style={{textTransform: 'capitalize'}}>{this.props.category}</text> category</h1>
+        <h1 className="text-center" style={{textTransform:'capitalize'}}>Taza-Khabar: Top Headlines on {this.props.category} category</h1>
         {this.state.loading && <Spinner/>}
         <div className="row">
           {!this.state.loading &&
